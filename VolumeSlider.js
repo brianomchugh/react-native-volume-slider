@@ -3,6 +3,7 @@
 
 import { requireNativeComponent, StyleSheet, Image } from 'react-native';
 import React, { Component } from 'react';
+import { ViewPropTypes, ImagePropTypes } from "deprecated-react-native-prop-types"
 import PropTypes from 'prop-types'
 
 type Event = Object;
@@ -18,7 +19,7 @@ class VolumeSlider extends Component {
     /**
      * The image for the thumb
      */
-    thumbImage: Image.propTypes.source,
+    thumbImage: ImagePropTypes.source,
 
     /**
      * The size of the thumb area that allows moving the thumb.
